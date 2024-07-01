@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { BsBagCheckFill } from 'react-icons/bs';
-
 import { useStateContext } from '../context/StateContext';
 import { runFireworks } from '../lib/utils';
-
 const Success = () => {
   const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
   
@@ -15,7 +13,6 @@ const Success = () => {
     setTotalQuantities(0);
     runFireworks();
   }, []);
-
   return (
     <div className="success-wrapper">
       <div className="success">
@@ -27,7 +24,7 @@ const Success = () => {
         <p className="description">
           If you have any questions, please email
           <a className="email" href="mailto:order@example.com">
-            order@example.com
+            orderinfo@gmail.com
           </a>
         </p>
         <Link href="/">
@@ -39,5 +36,4 @@ const Success = () => {
     </div>
   )
 }
-
 export default Success

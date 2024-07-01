@@ -1,8 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-
 import { urlFor } from '../lib/client';
-
 const HeroBanner = ({ heroBanner }) => {
   return (
     <div className="hero-banner-container">
@@ -18,12 +16,13 @@ const HeroBanner = ({ heroBanner }) => {
           </Link>
           <div className="desc">
             <h5>Description</h5>
-            <p>{heroBanner.desc}</p>
+            <p>{heroBanner.desc}. The game begins here. With Immortal 1000D gaming headphones, don't just play the game - feel it, live it, and own it. 
+            </p>   
           </div>
         </div>
       </div>
     </div>
   )
 }
-
 export default HeroBanner
+
